@@ -16,17 +16,57 @@
       p.style.fontSize = '50px';
     }
     // Regular
+    console.log('hello');
+
     // Interpolated
+    console.log('hello I am %s string!', 'me');
+    or
+    console.log(`hello I am ${var}`);
+
     // Styled
+    console.log('%c I am some great text', 'font-size: 2px: background: red;')
+
+
     // warning!
+
+    console.warn('Oh NOO');
     // Error :|
+    console.error('Oh NOO');
+
     // Info
+
+    console.info('Gators eat 3 people a year');
     // Testing
+
+    console.assert(1 === 1, 'Thats wrong'); // wont fire, will only fire if it is wrong.
     // clearing
+    console.clear();
+
     // Viewing DOM Elements
-    // Grouping together
+
+    console.log(p);
+    console.dir(p); // allows you to see methods on the element.
+
+    //Grouping together
+
+    console.group(`${dog.name}`);
+
+    console.groupEnd(`${dog.name}`);
+
     // counting
+
+    console.count('Brian');  //counts how many times I used Brian
     // timing
+
+    console.time('fetching data');
+    // some action you want to time
+
+    console.timeEnd('fetching data');
+
+    //table
+
+    console.table('array of objects'); // shows a table in the log of the object.
+
   </script>
 </body>
 </html>
